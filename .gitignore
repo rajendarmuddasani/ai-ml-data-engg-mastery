@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build scripts (temporary)
+build_*.py
+
+# Data files (if large)
+*.csv
+*.h5
+*.hdf5
+*.parquet
+
+# Model files (if large)
+*.pkl
+*.joblib
+*.h5
+
+# Logs
+*.log
