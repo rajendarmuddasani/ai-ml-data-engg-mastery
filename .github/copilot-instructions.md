@@ -236,6 +236,111 @@ Before finishing notebook modifications, verify:
 ### NOTEBOOK_TRACKER.md Priority
 **ALWAYS update NOTEBOOK_TRACKER.md first** when starting or completing notebooks. This table is the single source of truth for tracking progress and ensuring nothing is missed.
 
+## GitHub Push Automation
+
+**Repository**: https://github.com/rajendarmuddasani/ai-ml-data-engg-mastery  
+**Tool**: `gh-mywork` from `/Users/rajendarmuddasani/AIML/14_gh-mywork`  
+**Strategy**: Push every 10 notebooks to maintain progress visibility for recruiters
+
+### First-Time Repository Creation (COMPLETED ✅)
+
+**Command used:**
+```bash
+cd /Users/rajendarmuddasani/AIML/48_AI_ML_DataEng_Complete_Mastery
+gh-mywork create ai-ml-data-engg-mastery \
+  --account posiva \
+  --from-path . \
+  --description "Complete AI/ML/Data Engineering Mastery - 190+ comprehensive notebooks" \
+  --public \
+  --branch main
+```
+
+**What this does:**
+- Creates repository on GitHub under `rajendarmuddasani` account
+- Initializes git repository (if not already initialized)
+- Adds all files from current directory
+- Commits with "Initial commit" message
+- Pushes to `main` branch
+- Makes repository public (visible to recruiters)
+
+**Topics added:**
+```bash
+gh repo edit rajendarmuddasani/ai-ml-data-engg-mastery \
+  --add-topic ai \
+  --add-topic machine-learning \
+  --add-topic data-engineering \
+  --add-topic python \
+  --add-topic jupyter-notebooks \
+  --add-topic deep-learning \
+  --add-topic mlops \
+  --add-topic semiconductor \
+  --add-topic post-silicon-validation
+```
+
+### Subsequent Pushes (Every 10 Notebooks)
+
+**When to push**: After completing notebooks in batches of 10 (e.g., 025-034, 035-044, etc.)
+
+**Standard push workflow:**
+```bash
+cd /Users/rajendarmuddasani/AIML/48_AI_ML_DataEng_Complete_Mastery
+
+# Stage new and modified notebooks
+git add *.ipynb
+
+# Stage updated documentation
+git add NOTEBOOK_TRACKER.md README.md MASTER_LEARNING_ROADMAP.md
+
+# Commit with descriptive message
+git commit -m "feat: Notebooks XXX-YYY - [Concept summary]
+
+- Notebook XXX: [Algorithm/Concept name]
+- Notebook YYY: [Algorithm/Concept name]
+
+Key additions:
+- [Major concept 1]
+- [Major concept 2]
+- Post-silicon validation applications
+- Production-ready implementations"
+
+# Push to main branch
+git push origin main
+```
+
+**Commit message template examples:**
+- `feat: Notebooks 025-034 - Probabilistic & Clustering Methods`
+- `feat: Notebooks 035-044 - Time Series & Neural Network Foundations`
+- `feat: Notebooks 045-054 - Deep Learning Fundamentals`
+
+**Push tracking**: See `GIT_PUSH_SCHEDULE.md` for complete push history and planning
+
+### Important Notes
+
+1. **Never create new repo again** - Repository already exists, only push updates
+2. **Always use main branch** - All pushes go to `main` branch
+3. **Include documentation updates** - NOTEBOOK_TRACKER.md, README.md should reflect new notebooks
+4. **Target audience**: Technical recruiters at Qualcomm, AMD, NVIDIA, Intel, etc.
+5. **Public visibility**: Repository is public for recruiter access
+6. **Automation tool**: Use `gh-mywork` or standard `git` commands (both work)
+
+### Quick Reference
+
+**Check repository status:**
+```bash
+git status
+gh repo view rajendarmuddasani/ai-ml-data-engg-mastery
+```
+
+**View on GitHub:**
+```bash
+gh repo view rajendarmuddasani/ai-ml-data-engg-mastery --web
+```
+
+**Check push schedule:**
+```bash
+cat GIT_PUSH_SCHEDULE.md
+```
+
 ## Automation Goals
 
 AI agents should be able to:
@@ -246,6 +351,8 @@ AI agents should be able to:
 - ✅ Validate notebook structure against quality standards
 - ✅ Suggest improvements based on these guidelines
 - ✅ Generate realistic STDF-based examples using available data patterns
+- ✅ **Push to GitHub every 10 notebooks using standard git workflow**
+- ✅ **Generate appropriate commit messages for recruiter visibility**
 
 ## Key Files Reference
 
@@ -259,6 +366,6 @@ When uncertain about notebook structure, reference `010_Linear_Regression.ipynb`
 
 ---
 
-**Last Updated:** 2025-12-07  
-**Version:** 2.0 (Merged comprehensive version)  
+**Last Updated:** 2025-12-08  
+**Version:** 2.1 (Added GitHub push automation instructions)  
 **Maintained By:** Workspace automation and user feedback

@@ -41,87 +41,140 @@ Every advanced concept is applied to practical scenarios:
 
 ---
 
-## 📚 Notebook Structure
+## 📁 Repository Structure
 
-### **001-009: Foundations** 🏗️
+Notebooks are organized into **topic-based folders** for easy navigation and maintenance:
+
+```
+📦 ai-ml-data-engg-mastery
+├── 01_Foundations/                    # Python, DSA (001-002) ✅ 2 notebooks
+├── 02_Regression_Models/              # Linear, Ridge, Lasso, Logistic (010-015) ✅ 6 notebooks
+├── 03_Tree_Based_Models/              # Decision Trees, RF, XGBoost, LightGBM (016-022) ✅ 7 notebooks
+├── 04_Distance_Based_Models/          # KNN, SVM, Naive Bayes (023-025) ✅ 3 notebooks
+├── 05_Clustering/                     # K-Means, DBSCAN, GMM, PCA (026-030) ✅ 5 notebooks
+├── 06_Time_Series/                    # ARIMA, Prophet, VAR (031-034) ✅ 4 notebooks
+├── 07_Deep_Learning/                  # Neural Networks, CNNs, RNNs (051-070) 📝 Planned
+├── 08_Modern_AI/                      # LLMs, RAG, Agents (071-090) ✅ 1 notebook
+├── 09_Data_Engineering/               # Spark, Airflow, Pipelines (091-110) 📝 Planned
+├── 10_MLOps/                          # Deployment, Monitoring (111-130) 📝 Planned
+├── MASTER_LEARNING_ROADMAP.md         # Complete learning path guide
+├── NOTEBOOK_TRACKER.md                # Detailed progress tracking
+├── QUICK_REFERENCE.md                 # Fast topic lookup
+└── README.md                          # This file
+```
+
+**Legend:** ✅ Complete | 📝 Planned | 🚧 In Progress
+
+---
+
+## 📚 Detailed Notebook Structure
+
+### **01_Foundations/** 🏗️ ✅ Complete
 Build bulletproof programming and algorithmic skills
 
 - `001_DSA_Python_Mastery.ipynb` - Complete DSA & Python reference
 - `002_Python_Advanced_Concepts.ipynb` - Decorators, generators, context managers
-- `003_Python_Concurrency_Parallelism.ipynb` - Threading, async, multiprocessing
-- `004_DSA_Advanced_Algorithms.ipynb` - Advanced graph algorithms
-- `005_SQL_Beginner_to_Advanced.ipynb` - Complete SQL mastery
-- `006_Data_Structures_Implementation.ipynb` - Build data structures from scratch
+### **02_Regression_Models/** 📈 ✅ Complete
+Supervised learning for continuous target prediction
 
----
-
-### **010-080+: Machine Learning Models** 🤖
-
-**Systematic progression from simple to complex models**
-*(Note: Numbering extends as needed for complete coverage - not limited to 040)*
-
-#### Regression (010-015)
 - `010_Linear_Regression.ipynb` - Foundation of ML with post-silicon yield prediction
   - From scratch implementation + sklearn
   - Comprehensive diagnostics and assumptions
   - 8 real-world projects (device yield, power consumption, test time, etc.)
   - Visual workflows with mermaid diagrams
-- `011_Polynomial_Regression.ipynb` - Non-linear relationships
-- `012_Ridge_Lasso_ElasticNet.ipynb` - Regularization techniques
-- `013_Logistic_Regression.ipynb` - Classification
-- `014_Support_Vector_Regression.ipynb` - Robust predictions
-
-#### Tree-Based Models (016-022)
-- `016_Decision_Trees.ipynb` - Interpretable models
-- `017_Random_Forest.ipynb` - Ensemble learning
-- `018_Gradient_Boosting_GBM.ipynb` - Sequential boosting
-- `019_XGBoost.ipynb` - Optimized boosting
-- `020_LightGBM.ipynb` - Fast gradient boosting
-- `021_CatBoost.ipynb` - Categorical boosting
-- `022_Voting_Stacking_Ensembles.ipynb` - Meta-ensembles
-
-#### Distance & Instance-Based (023-025)
-- `023_K_Nearest_Neighbors.ipynb` - Similarity-based learning
-- `024_Support_Vector_Machines.ipynb` - Maximum margin
-- `025_Naive_Bayes.ipynb` - Probabilistic classifiers
-
-#### Clustering (026-030)
-- `026_K_Means_Clustering.ipynb` - Partitioning
-- `027_Hierarchical_Clustering.ipynb` - Dendrogram-based
-- `028_DBSCAN.ipynb` - Density-based clustering
-- `029_Gaussian_Mixture_Models.ipynb` - Probabilistic clustering
-- `030_Dimensionality_Reduction.ipynb` - PCA, t-SNE, UMAP
-
-#### Time Series (031-035)
-- `031_Time_Series_Fundamentals.ipynb` - ARIMA, SARIMA
-- `032_Exponential_Smoothing.ipynb` - Holt-Winters
-- `033_Prophet_TimesFM.ipynb` - Modern time series
-
-#### Specialized (036-040)
-- `036_Isolation_Forest.ipynb` - Anomaly detection
-- `037_One_Class_SVM.ipynb` - Novelty detection
-- `038_AutoEncoders_For_Anomalies.ipynb` - Neural anomaly detection
-- `039_Association_Rules_Apriori.ipynb` - Pattern mining
-- `040_Recommender_Systems.ipynb` - Recommendation engines
+- `011_Polynomial_Regression.ipynb` - Non-linear relationships, bias-variance tradeoff
+- `012_Ridge_Lasso_ElasticNet.ipynb` - L1/L2 regularization, feature selection
+- `013_Logistic_Regression.ipynb` - Binary/multi-class classification, ROC/AUC
+- `014_Support_Vector_Regression.ipynb` - Epsilon-insensitive loss, kernel trick
+- `015_Quantile_Regression.ipynb` - Conditional quantiles, prediction intervals
 
 ---
 
-### **041-050: ML Engineering** 🔧
+### **03_Tree_Based_Models/** 🌲 ✅ Complete
+Decision trees, random forests, and gradient boosting
 
-**Production-ready ML systems**
-
-- `041_Feature_Engineering_Masterclass.ipynb`
-- `042_Model_Evaluation_Metrics.ipynb`
-- `043_Hyperparameter_Tuning.ipynb`
-- `044_Model_Interpretability_SHAP_LIME.ipynb`
-- `045_Model_Deployment_Versioning.ipynb`
-- `046_Data_Versioning_DVC.ipynb`
-- `047_ML_Pipelines_Automation.ipynb`
-- `048_Cross_Validation_Strategies.ipynb`
-- `049_Imbalanced_Data_Handling.ipynb`
-- `050_AutoML_Frameworks.ipynb`
+- `016_Decision_Trees.ipynb` - CART, Gini/RSS splitting, interpretability
+- `017_Random_Forest.ipynb` - Bagging, OOB error, parallel training
+- `018_Gradient_Boosting.ipynb` - Sequential boosting, learning rate
+- `019_XGBoost.ipynb` - L1/L2 regularization, GPU acceleration
+- `020_LightGBM.ipynb` - Histogram-based, 10-100× speedup
+- `021_CatBoost.ipynb` - Ordered boosting, high-cardinality categoricals
+- `022_Voting_Stacking_Ensembles.ipynb` - Model combination, meta-learning
 
 ---
+
+### **04_Distance_Based_Models/** 📏 ✅ Complete
+Instance-based and margin-based learning
+
+- `023_K_Nearest_Neighbors.ipynb` - KNN, distance metrics, curse of dimensionality
+- `024_Support_Vector_Machines.ipynb` - SVM/SVC/SVR, kernels, maximum margin
+- `025_Naive_Bayes.ipynb` - Gaussian/Multinomial, Bayes' theorem, real-time inference
+
+---
+
+### **05_Clustering/** 🔍 ✅ Complete
+Unsupervised learning and dimensionality reduction
+
+- `026_K_Means_Clustering.ipynb` - Partitioning, elbow method, silhouette
+- `027_Hierarchical_Clustering.ipynb` - Agglomerative/divisive, dendrogram
+- `028_DBSCAN.ipynb` - Density-based, arbitrary shapes, outlier detection
+- `029_Gaussian_Mixture_Models.ipynb` - EM algorithm, soft clustering, BIC/AIC
+- `030_Dimensionality_Reduction.ipynb` - PCA, t-SNE, UMAP, manifold learning
+
+---
+
+### **06_Time_Series/** ⏰ ✅ Complete
+Temporal forecasting and multivariate models
+
+- `031_Time_Series_Fundamentals.ipynb` - ARIMA/SARIMA, stationarity, ACF/PACF
+- `032_Exponential_Smoothing.ipynb` - SES/Holt/Holt-Winters, α/β/γ parameters
+- `033_Prophet_Modern_TS.ipynb` - Facebook Prophet, automatic changepoints, holidays
+- `034_VAR_Multivariate_TS.ipynb` - Vector Autoregression, Granger causality, IRF
+
+---
+
+### **07_Deep_Learning/** 🧠 📝 Planned
+Neural networks and deep learning (Notebooks 051-070)
+
+- `051_Neural_Networks_Fundamentals` - Perceptrons, backpropagation, activation functions
+- `052_Deep_Neural_Networks` - Multi-layer networks, dropout, batch normalization
+- `053_Convolutional_Neural_Networks` - CNNs, ResNet, image classification
+- `054_Recurrent_Neural_Networks` - RNNs, LSTM, GRU for sequences
+- `055_Attention_Mechanisms` - Self-attention, multi-head attention
+- `060_Computer_Vision` - Object detection, segmentation, wafer defect imaging
+- `065_NLP_Fundamentals` - Word embeddings, text classification
+
+---
+
+### **08_Modern_AI/** 🤖 ✅ 1 notebook (071-090)
+LLMs, RAG, and AI agents
+
+- `079_RAG_Fundamentals.ipynb` - Retrieval-Augmented Generation, vector databases, embeddings
+- *(More notebooks planned: Transformers, Fine-tuning, Prompt Engineering, LangChain, AI Agents)*
+
+---
+
+### **09_Data_Engineering/** 🏗️ 📝 Planned
+Pipelines, ETL, and big data (Notebooks 091-110)
+
+- `091_SQL_Advanced` - Complex queries, window functions, optimization
+- `092_Spark_Fundamentals` - PySpark, distributed processing
+- `093_Data_Pipelines` - Airflow, Prefect, workflow orchestration
+- `094_Data_Warehousing` - Snowflake, BigQuery
+- `095_Stream_Processing` - Kafka, real-time data
+- `100_STDF_Parsing` - Semiconductor test data extraction
+
+---
+
+### **10_MLOps/** 🚀 📝 Planned
+Production ML deployment (Notebooks 111-130)
+
+- `111_MLOps_Fundamentals` - CI/CD for ML, model versioning
+- `112_Model_Deployment` - Flask/FastAPI, Docker, Kubernetes
+- `113_Model_Monitoring` - Drift detection, alerting
+- `114_Feature_Stores` - Feast, Tecton
+- `115_ML_Experimentation` - MLflow, Weights & Biases
+- `120_A_B_Testing` - Experimental design, causal inference
 
 ### **051-070: Deep Learning** 🧠
 
