@@ -4,9 +4,53 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
 venv/
 ENV/
+env/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.jupyter/
+*.ipynb~
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # Personal files
 *.pdf
@@ -20,33 +64,72 @@ GIT_PUSH_SCHEDULE.md
 SKILLS_TO_BE_PLANNED.md
 WORKSPACE_SUMMARY.txt
 
-# Temporary build files
-build_*.py
+# Data files (if large, add specific patterns)
+*.csv
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.parquet
+data/raw/*
+data/processed/*
 
-# IDE
-.vscode/
-.idea/
+# STDF files (semiconductor test data - can be large)
+*.stdf
+*.std
+
+# Model files (can be large)
+models/*.pkl
+models/*.h5
+models/*.pt
+models/*.pth
+*.onnx
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
 *.swp
 *.swo
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+*~
 
-# Jupyter Notebook
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
+# Environment variables
+.env
+.env.local
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Build artifacts
+build_*.py
+
+# Credentials (IMPORTANT: Never commit sensitive data)
+*.key
+*.pem
+credentials.json
+secrets.json
+resume.pdf
+cv.pdf
+
+# Large output files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Keep but ignore contents of certain directories
+data/raw/.gitkeep
+data/processed/.gitkeep
+models/.gitkeep
+logs/.gitkeep
 
 # VS Code
 .vscode/
