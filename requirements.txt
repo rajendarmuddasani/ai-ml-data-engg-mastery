@@ -1,0 +1,72 @@
+# AI/ML Complete Mastery - Core Dependencies
+# Last Updated: 2025-12-22
+
+# Core Data Science
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+catboost>=1.2.0
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+tensorflow>=2.13.0
+keras>=2.13.0
+
+# NLP & Transformers
+transformers>=4.30.0
+tokenizers>=0.13.0
+sentence-transformers>=2.2.0
+
+# Time Series
+statsmodels>=0.14.0
+prophet>=1.1.0
+
+# Data Engineering
+pyspark>=3.4.0
+apache-airflow>=2.6.0
+
+# MLOps
+mlflow>=2.5.0
+feast>=0.32.0
+wandb>=0.15.0
+
+# Visualization & Dashboards
+streamlit>=1.24.0
+dash>=2.11.0
+
+# Database & SQL
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+
+# Utilities
+jupyter>=1.0.0
+ipykernel>=6.23.0
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+
+# API & Web
+fastapi>=0.100.0
+uvicorn>=0.23.0
+requests>=2.31.0
+
+# Cloud & Deployment
+boto3>=1.28.0
+google-cloud-storage>=2.10.0
+azure-storage-blob>=12.17.0
+
+# Container & Orchestration
+docker>=6.1.0
+kubernetes>=27.2.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0

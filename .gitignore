@@ -47,6 +47,9 @@ env/
 .AppleDouble
 .LSOverride
 
+# Archive folder (old automation scripts)
+archive/
+
 # Windows
 Thumbs.db
 ehthumbs.db
